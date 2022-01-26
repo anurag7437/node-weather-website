@@ -38,6 +38,8 @@ app.get("/weather", (req, res) => {
                     location: data.location,
                     feelslike: forecastData.feelslike,
                     temprature: forecastData.temperature,
+                    windSpeed: forecastData.windSpeed,
+                    humidity: forecastData.humidity,
                 });
             }
         );

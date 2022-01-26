@@ -14,8 +14,9 @@ weatherForm.addEventListener("submit", (e) => {
                 if (data.error) {
                     messageTwo.textContent = `${data.error}`;
                 } else {
-                    messageOne.textContent = `Temprature is ${data.temprature}
-                        for ${data.location} and it is currently ${data.forecast}
+                    messageOne.textContent = `It is currently ${data.temprature} degrees in
+                        ${data.location} with ${data.forecast} skies with wind speeds of ${data.windSpeed} Km/hr and a humidity of
+                        ${data.humidity}%
                         `;
                 }
             });

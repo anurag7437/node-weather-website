@@ -20,6 +20,8 @@ const forecast = (latitude, longitude, callback) => {
                     weather_description: current.weather_descriptions[0],
                     temperature: current.temperature,
                     feelslike: current.feelslike,
+                    windSpeed: current.wind_speed,
+                    humidity: current.humidity,
                 });
             }
         }
