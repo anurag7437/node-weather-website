@@ -1,0 +1,19 @@
+[
+    {
+        "productName": "SUPER GOLD",
+        "productCode": "SKY_OFF_002",
+        "isRootProduct": true,
+        "childProducts": [
+            {
+                "productName": "Super Gold Vision",
+                "productCode": "SKY_BUND_005",
+                "salesPrice": 4.0,
+                "attributes": [{ "name": "noOfRooms", "attcode": "rooms" }]
+            },
+            {
+                "productName": "Super Gold aaaa",
+                "productCode": "SKY_BUND_006"
+            }
+        ]
+    }
+]
