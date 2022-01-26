@@ -9,18 +9,16 @@ weatherForm.addEventListener("submit", (e) => {
     messageOne.textContent = "";
     const location = search.value;
     if (location !== undefined) {
-        fetch("http://localhost:3000/weather?address=" + location).then(
-            (response) => {
-                response.json().then((data) => {
-                    if (data.error) {
-                        messageTwo.textContent = `${data.error}`;
-                    } else {
-                        messageOne.textContent = `Temprature is ${data.temprature}
+        fetch("/weather?address=" + location).then((response) => {
+            response.json().then((data) => {
+                if (data.error) {
+                    messageTwo.textContent = `${data.error}`;
+                } else {
+                    messageOne.textContent = `Temprature is ${data.temprature}
                         for ${data.location} and it is currently ${data.forecast}
                         `;
-                    }
-                });
-            }
-        );
+                }
+            });
+        });
     }
 });
